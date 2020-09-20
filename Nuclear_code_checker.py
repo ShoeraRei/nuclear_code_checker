@@ -4,9 +4,10 @@ from bs4 import BeautifulSoup;
 print("\nwe are not responsible if there are other parties who aim to misuse the nuclear code\n");
 launch_code = input("enter the launch code :");
 print('please wait checking code:'+launch_code+"....");
-code_link =["https://nhentai.net/g/"+launch_code+"/","https://www.tsumino.com/entry/"+launch_code,"https://hentaifox.com/gallery/"+launch_code+"/","https://imhentai.com/gallery/"+launch_code+"/","https://asmhentai.com/g/"+launch_code+"/","https://hentai.cafe/hc.fyi/"+launch_code,"http://www.hbrowse.com/"+launch_code+"/c00001"];
+code_link =["https://nhentai.net/g/"+launch_code+"/","https://www.tsumino.com/entry/"+launch_code,"https://hentaifox.com/gallery/"+launch_code+"/","https://imhentai.com/gallery/"+launch_code+"/","https://asmhentai.com/g/"+launch_code+"/","https://hentai.cafe/hc.fyi/"+launch_code,"http://www.hbrowse.com/"+launch_code+"/c00001","https://1cak.com/"+launch_code];
 q = 0;
 t = 1;
+#2216917
 list_link = [];
 list_title = [];
 while q < len(code_link):
