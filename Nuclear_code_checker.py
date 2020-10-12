@@ -14,9 +14,12 @@ while q < len(code_link):
   code_request = requests.get(code_link[q]);
   code_soup = BeautifulSoup(code_request.content,"html.parser");
   if code_request.status_code == 200:
-    title = code_soup.title.text;
-    list_link.append(code_link[q]);
-    list_title.append(title);
+    if code_soup.title == None:
+      print(str(t)+" nuclear server has encountered an error or use vpn");
+    else:
+      title = code_soup.title.text;
+      list_link.append(code_link[q]);
+      list_title.append(title);
   else:
     print(str(t)+" nuclear server has encountered an error or use vpn");
     t+=1;
